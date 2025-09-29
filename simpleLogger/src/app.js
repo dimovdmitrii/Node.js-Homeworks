@@ -1,4 +1,3 @@
-import "./logger.js";
 import logMessage from "./logger.js";
 
 logMessage("Hello, Node.js!");
