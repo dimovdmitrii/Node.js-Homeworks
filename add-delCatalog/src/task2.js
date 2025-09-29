@@ -1,16 +1,21 @@
-import fs from "fs";
+import fs from "node:fs/promises";
 
-fs.writeFile("./src/info.txt", "Node.js is awesome!", (err) => {
-  if (err) {
-    console.error(err.message);
+async function readFile() {
+  try {
+    await fs.writeFile("./src/info.txt", "Node.js is awesome!");
+    console.log("File writed successfuly");
+  } catch (error) {
+    console.log("Error by writing file", error.message);
+    return;
   }
-  console.log("File written successfully");
+  try {
+    const text = await fs.readFile("./src/info.txt", "utf-8");
+    console.log("File readed successfully!");
+    console.log("----------------------");
+    console.log(text);
+  } catch (error) {
+    console.log("Error by reading  file", error.mesasge);
+  }
+}
 
-  fs.readFile("./src/info.txt", "utf-8", (err, data) => {
-    if (err) {
-      console.error("Error reading file:", err.message);
-    }
-    console.log("File read successfully:");
-    console.log(data);
-  });
-});
+readFile();

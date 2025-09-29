@@ -1,18 +1,20 @@
-import fs from "fs";
+import fs from "node:fs/promises";
 
-fs.mkdir("./src/myFolder", (err) => {
-  if (err) {
-    if (err.code === "EEXIST") {
-      console.log("Directory already exists");
-    }
-    console.log(err);
+async function addDelDir() {
+  try {
+    await fs.mkdir("./src/myFolder");
+    console.log("Directory  was successfuly created");
+  } catch (error) {
+    console.log("Error by creating directory", error.message);
+    return;
   }
-  console.log("Directory created successfully");
 
-  fs.rmdir("./src/myFolder", (err) => {
-    if (err) {
-      console.log(err);
-    }
-    console.log("Directory deleted successfully");
-  });
-});
+  try {
+    await fs.rm("./src/myFolder", { recursive: true });
+    console.log("Directory was successfuly deleted");
+  } catch (error) {
+    console.log("Error by deleting directory", error.message);
+  }
+}
+
+addDelDir();
