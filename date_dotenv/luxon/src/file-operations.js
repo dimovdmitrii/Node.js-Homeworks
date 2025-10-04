@@ -1,9 +1,7 @@
 import fs from "node:fs/promises";
-import dotenv from "dotenv";
+import "dotenv/config";
 
-dotenv.config();
-
-const FILENAME = process.env.FILENAME;
+const { FILENAME } = process.env;
 
 async function fileOperation() {
   try {
@@ -15,7 +13,7 @@ async function fileOperation() {
   }
   try {
     const data = await fs.readFile(FILENAME, "utf-8");
-    console.log("File successfuly readed");
+    console.log("File successfuly readed: ");
     console.log(data);
   } catch (error) {
     console.log("error.message");
