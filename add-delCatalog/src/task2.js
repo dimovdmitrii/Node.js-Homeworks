@@ -11,7 +11,7 @@ async function readFile() {
   try {
     const text = await fs.readFile("./src/info.txt", "utf-8");
     console.log("File readed successfully!");
-    console.log("----------------------");
+    console.log("File contents:");
     console.log(text);
   } catch (error) {
     console.log("Error by reading  file", error.mesasge);
