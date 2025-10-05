@@ -1,10 +1,10 @@
-import express from "express";
+import { Router } from "express";
 import {
   getProductsController,
   addProductController,
 } from "../controllers/productController.js";
 
-const router = express.Router();
+const router = Router();
 
 router.get("/", getProductsController);
 
