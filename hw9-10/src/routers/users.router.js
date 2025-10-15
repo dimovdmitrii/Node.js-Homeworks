@@ -14,7 +14,7 @@ import {
   authenticateJWT,
   checkPasswordChange,
   authorizeRole,
-} from "../middlewares/auth.middleware.js";
+} from "../middlewares/authenticate.js";
 
 import { validateBody } from "../utils/validateBody.js";
 import {
@@ -37,12 +37,12 @@ router.post("/refresh-token", refreshToken);
 
 router.post("/change-password", validateBody(passwordSchema), changePassword);
 
-router.post(
+router.delete(
   "/delete-account",
   validateBody(deleteAccountSchema),
   deleteAccount,
 );
-router.put("/update-email", validateBody(emailSchema), updateEmail);
+router.put("/update-email", checkPasswordChange, validateBody(emailSchema), updateEmail);
 
 router.put(
   "/update-role",

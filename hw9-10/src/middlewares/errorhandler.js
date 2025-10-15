@@ -1,6 +1,6 @@
 import { ValidationError, UniqueConstraintError } from "sequelize";
 
-const errorHandler = (error, req, res, next) => {
+const errorHandler = (error, req, res) => {
   if (error instanceof ValidationError) {
     error.status = 400;
   }

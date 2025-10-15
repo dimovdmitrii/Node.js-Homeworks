@@ -1,29 +1,29 @@
 import bcrypt from "bcrypt";
-import { HttpError } from "../utils/HttpError.js";
+import HttpError from "../utils/HttpError.js";
 import {
   findUser,
   createUser,
   updateUser,
   deleteUser,
 } from "../services/users.service.js";
-import { signToken, verifyToken } from "../utils/jwt.utils.js";
+import { signToken, verifyToken } from "../utils/jwt.util.js";
 
 export const register = async (req, res) => {
-  const { email, password } = req.body;
+  const { username, email, password } = req.body;
 
   const existingUser = await findUser({ email });
   if (existingUser) {
     throw HttpError(409, "Email already registered");
   }
 
-  const newUser = await createUser({ email, password });
+  const newUser = await createUser({ username, email, password });
   res.status(201).json({ message: "Registration successful", user: newUser });
 };
 
 export const login = async (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
-  const user = await findUser({ email });
+  const user = await findUser({ username });
   if (!user) throw HttpError(401, "Invalid credentials");
 
   const passwordMatch = await bcrypt.compare(password, user.password);
@@ -74,15 +74,15 @@ export const deleteAccount = async (req, res) => {
 };
 
 export const updateEmail = async (req, res) => {
-  const { newEmail } = req.body;
+  const { email } = req.body;
   const userId = req.user.id;
 
-  const existingUser = await findUser({ email: newEmail });
+  const existingUser = await findUser({ email: email });
   if (existingUser && existingUser.id !== userId) {
     throw HttpError(409, "New email is already in use by another account");
   }
 
-  const updatedUser = await updateUser(userId, { email: newEmail });
+  const updatedUser = await updateUser(userId, { email: email });
   res
     .status(200)
     .json({ message: "Email successfully updated", user: updatedUser });

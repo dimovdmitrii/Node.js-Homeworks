@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { sequelize } from "../sequelize.js";
+import sequelize from "../sequelize.js";
 import { email } from "../../constans/validation.js";
 
 const User = sequelize.define("user", {
@@ -39,6 +39,6 @@ const User = sequelize.define("user", {
   },
 });
 
-User.sync({ alter: true });
+// User.sync({ alter: true });
 
 export default User;

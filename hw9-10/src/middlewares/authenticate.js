@@ -1,6 +1,6 @@
-import { HttpError } from "../utils/HttpError.js";
+import HttpError from "../utils/HttpError.js";
 import { findUserById } from "../services/users.service.js";
-import { verifyToken } from "../utils/jwt.utils.js";
+import { verifyToken } from "../utils/jwt.util.js";
 
 export const authenticateJWT = async (req, res, next) => {
   const authorization = req.get("Authorization");

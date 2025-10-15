@@ -7,9 +7,13 @@ const sequelize = new Sequelize({
   password: process.env.DATABASE_PASSWORD,
   host: process.env.DATABASE_HOST,
   port: Number(process.env.DATABASE_PORT),
-  dialectoptions: {
-    ssl: process.env.DATABASE_DIALECT_OPTION_SSL === "true",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
   },
+  logging: console.log,
 });
 
 export default sequelize;

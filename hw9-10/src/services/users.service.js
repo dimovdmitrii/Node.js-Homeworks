@@ -1,5 +1,4 @@
 import User from "../db/models/User.js";
-import User from "../db/models/User.js";
 import bcrypt from "bcrypt";
 
 const SALT_ROUNDS = 10;
@@ -12,9 +11,9 @@ export const findUserById = async (id) => {
   return User.findByPk(id);
 };
 
-export const createUser = async ({ email, password }) => {
+export const createUser = async ({ username, email, password }) => {
   const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
-  return User.create({ email, password: hashedPassword });
+  return User.create({ username, email, password: hashedPassword });
 };
 
 export const updateUser = async (id, data) => {

@@ -1,12 +1,12 @@
 import HttpError from "./HttpError.js";
 
-const valideteBody = (schema, body) => {
-  const { error } = schema.safeParse(body);
+const validateBody = (schema) => (req, res, next) => {
+  const { error } = schema.safeParse(req.body);
   if (error) {
-    const message = JSON.parse(error.message)[0];
+    const message = error.errors[0].message;
     throw HttpError(400, message);
   }
-  return true;
+  next();
 };
 
-export default valideteBody;
+export { validateBody };
