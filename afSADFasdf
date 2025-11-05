@@ -1,0 +1,157 @@
+[33mcommit fe9db018c3c72f198f8a9fa12591d514c5b9ff9e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Wed Oct 22 21:25:27 2025 +0200
+
+    Revert "added hw 13"
+    
+    This reverts commit d6c4db24770c89dfb4d5ae2eae0157df6e28c3ee.
+
+[33mcommit d6c4db24770c89dfb4d5ae2eae0157df6e28c3ee[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Tue Oct 21 23:27:00 2025 +0200
+
+    added hw 13
+
+[33mcommit 902f8eb3b3bb536bf0e16d310d12d1f8733c7fe8[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Oct 20 23:05:32 2025 +0200
+
+    added hw 12
+
+[33mcommit 3be67fdfc5658972ffd5eb1e76aac4d203674450[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Oct 20 18:36:58 2025 +0200
+
+    added hw 11
+
+[33mcommit 1e2e537aa0e16342cbef8abb614875e087fb23fc[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Wed Oct 15 22:44:08 2025 +0200
+
+    added hw 9-10
+
+[33mcommit 181cb2eaf50a291346539d84cb9d587e3253f68d[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Tue Oct 14 00:34:38 2025 +0200
+
+    added hw 9-10
+
+[33mcommit 9f312a5c624631018dbdc1f92a67057bbebbc79b[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Thu Oct 9 00:24:50 2025 +0200
+
+    added hw8 booksDB
+
+[33mcommit bf52b833fbbede667d1b9b65fa1b2968895aae0d[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Wed Oct 8 09:48:04 2025 +0200
+
+    change errorHandler
+
+[33mcommit cc7b3e89337810b39be36a78e0ce042d6acc7e5f[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Tue Oct 7 23:18:34 2025 +0200
+
+    added hw 7
+
+[33mcommit 3ed7ecaa7911dfb9711a15abe910c3736d2e853d[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sun Oct 5 16:43:21 2025 +0200
+
+    delete .env
+
+[33mcommit f6e35dc7fb8217f1a4817c28300ea92e4778f0f4[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sun Oct 5 16:41:06 2025 +0200
+
+    sequelize.js change
+
+[33mcommit d5525601ae1b12a223a9d24a8b00c580a6727e76[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sun Oct 5 11:31:39 2025 +0200
+
+    changed product.service.js
+
+[33mcommit 2242e12c603747fac36e262af45d533f2970a273[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sat Oct 4 22:05:37 2025 +0200
+
+    added hw tasks 4 and 5
+
+[33mcommit b1a6a9d417d9078de15f9640a77f232ab5e984d9[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sat Oct 4 20:25:06 2025 +0200
+
+    Added tasks 1 2 3
+
+[33mcommit f63e951f682d792413ae94b214956d3a0e0ae935[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sat Oct 4 14:06:00 2025 +0200
+
+    added home work #5
+
+[33mcommit c3caff0b9ec09c5fb9abacfbdc8667eed1bc5df5[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sat Oct 4 11:56:09 2025 +0200
+
+    changed date format
+
+[33mcommit 3d2aeb728d614940876c9ee2d517b41df6a2952e[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sat Oct 4 11:35:12 2025 +0200
+
+    console log changed
+
+[33mcommit e5846346bbc54da846c1d92a6cde1273e867bfdb[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Sep 29 21:23:17 2025 +0200
+
+    Added fileOperation function and date trnsform
+
+[33mcommit bed26d20383d08a334d9c541f881a330bc14139b[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Sep 29 20:31:02 2025 +0200
+
+    added 2 tasks successfuly
+
+[33mcommit b4794b2de4408e0f4da2df61b2e2538c9c158819[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Sep 29 09:10:30 2025 +0200
+
+    start script added
+
+[33mcommit d4bd10e1e1074c2b9972a3b356a5f4ba999d526f[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Mon Sep 29 09:04:48 2025 +0200
+
+    Changed start and import
+
+[33mcommit be63283d34b54ed7c7bbff8b98e33c9c948cd93a[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Sun Sep 28 13:25:14 2025 +0200
+
+    3d homework completed
+
+[33mcommit cc4c39b5e4a78b18528d5f68e429e586c133435f[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Fri Sep 26 18:57:52 2025 +0200
+
+    simple chat done
+
+[33mcommit 9d9e18c2b229e29cedcd82425eb447e242792c6c[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Fri Sep 26 17:45:17 2025 +0200
+
+    second commit
+
+[33mcommit 45bef029e03db60fcd5aee236b28e3575bb0589f[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Fri Sep 26 17:44:19 2025 +0200
+
+    added simple logger
+
+[33mcommit c8db682abb2e4d7b6c0eac52e91c85acbe690764[m
+Author: dimovdmitrii <dimovdima1509@gmail.com>
+Date:   Fri Sep 26 17:27:22 2025 +0200
+
+    init commit

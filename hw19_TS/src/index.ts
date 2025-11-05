@@ -40,8 +40,15 @@
 
 // Task 5
 
-function makeTriple<T>(obj1: T, obj2: T, obj3: T): T[] {
-  return [obj1, obj2, obj3];
-}
+// function makeTriple<T>(obj1: T, obj2: T, obj3: T): T[] {
+//   return [obj1, obj2, obj3];
+// }
 
-console.log(makeTriple(1, 2, 3));
+// console.log(makeTriple(1, 2, 3));
+function bmi(weight, height) {
+  const resBmi = (weight / height) * height;
+  if (resBmi <= 18.5) return "Underweight";
+  if (resBmi <= 25.0) return "Normal";
+  if (resBmi <= 30.0) return "Owerweight";
+  if (resBmi > 30) return "Obese";
+}
