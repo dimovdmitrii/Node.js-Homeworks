@@ -21,8 +21,8 @@ const user1: Person = {
 
 printPersonInfo(user1);
 
-function squareNumber(num: number) {
-  console.log(num * num);
+function squareNumber(num: number): number {
+  return num * num;
 }
 squareNumber(5);
 
