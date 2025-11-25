@@ -32,20 +32,24 @@ console.log(dog.sound());
 class Library {
   static totalBooks: number = 0;
 
-  addBook(title: string): void {
+  constructor(title: string) {
+    this.addBook(title);
+  }
+
+  private addBook(title: string): void {
     Library.totalBooks++;
   }
+
   infoBook(): void {
-    console.log(`Now total cout of the books : ${Library.totalBooks}`);
+    console.log(`Now total count of the books: ${Library.totalBooks}`);
   }
 }
-const Library1 = new Library();
 
-Library1.addBook("First book");
-Library1.addBook("Winnie the pooh");
-Library1.addBook("HPMor");
+const library1 = new Library("First book");
+const library2 = new Library("Winnie the Pooh");
+const library3 = new Library("HPMor");
 
-Library1.infoBook();
+library3.infoBook();
 
 //Task 3
 
